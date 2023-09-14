@@ -39,11 +39,11 @@ function rot13(encodedStr) {
 
   for(let i=0; i<encodedStr.lenght; i++){
 	  let currentChar = encodedStr[i].charCodeAt(0);
-	  if(currentChar >= A && currentChar <=Z){
-		  decodedArr += lookup[encodedStr[i]];
+	  if(currentChar>=A && currentChar<=Z){
+		  decodedArr +=lookup[encodedStr[i]];
 	  }
 	  else{
-		  decodeArr += encodedStr[i];
+		  decodeArr +=encodedStr[i];
 	  }
   }
 	
